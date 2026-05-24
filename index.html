@@ -23,7 +23,19 @@
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
-                    <i class="fas fa-paint-roller"></i> LBP COULEURS
+                    <svg viewBox="0 0 200 100" width="50" height="35" xmlns="http://www.w3.org/2000/svg" style="margin-right: 8px;">
+                        <!-- Pinceau stylisé -->
+                        <path d="M40 20 L60 10 L70 35 Q65 45 50 45 Q35 45 30 30 Z" fill="url(#grad1)"/>
+                        <path d="M45 50 Q40 55 35 60 L35 75 Q35 85 45 85 L55 85 Q65 85 65 75 L65 60 Q60 55 55 50 Z" fill="#1B3A7E"/>
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#1B3A7E;stop-opacity:1" />
+                                <stop offset="50%" style="stop-color:#FFD500;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#E91E8C;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    LBP COULEURS
                 </div>
                 <button class="menu-toggle" id="menuToggle">
                     <span></span>
@@ -310,6 +322,42 @@
                     </div>
                     <h3>Éco-Responsable</h3>
                     <p>Matériaux écologiques et pratiques respectueuses de l'environnement</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Card Display Section -->
+    <section class="business-card-section" id="carte">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Coordonnées</h2>
+                <p>Retrouvez Léo Blachier, gérant de LBP COULEURS</p>
+            </div>
+            <div class="business-card-display">
+                <div class="business-card">
+                    <div class="card-left">
+                        <h3>Plaquiste</h3>
+                        <p>Peintre</p>
+                        <div class="services-list">
+                            <p>✓ Peintures</p>
+                            <p>✓ Enduits décoratifs</p>
+                            <p>✓ Papiers peints</p>
+                            <p>✓ Cloisonages</p>
+                            <p>✓ Bandes à joints</p>
+                        </div>
+                    </div>
+                    <div class="card-right">
+                        <div class="card-qr">
+                            <i class="fas fa-qrcode"></i>
+                            <p>SCAN ME</p>
+                        </div>
+                        <div class="card-contact">
+                            <h4>Léo Blachier</h4>
+                            <p class="phone">06.69.12.19.67</p>
+                            <p class="email">lbp.couleurs@hotmail.com</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
