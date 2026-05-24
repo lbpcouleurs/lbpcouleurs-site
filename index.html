@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LBP COULEURS - Entreprise de plâtrerie et peinture à La Voulte-sur-Rhône. Services professionnels : plâtrerie, peinture intérieure/extérieure, isolation, faux plafonds.">
+    <meta name="keywords" content="plâtrerie, peinture, La Voulte-sur-Rhône, rénovation, isolation">
+    <meta name="author" content="LBP COULEURS">
+    <title>LBP COULEURS - Plâtrerie & Peinture Haut de Gamme</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">LBP COULEURS</div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#galerie">Galerie</a></li>
+                    <li><a href="#apropos">À propos</a></li>
+                    <li><a href="#avis">Avis</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <div class="hero-overlay"></div>
+        <video autoplay muted loop class="hero-video">
+            <source src="https://videos.pexels.com/video-files/8435609/8435609-sd_640_360_24fps.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1 class="hero-title fade-in">LBP COULEURS</h1>
+            <p class="hero-subtitle fade-in" style="animation-delay: 0.2s;">Entreprise de plâtrerie et peinture</p>
+            <p class="hero-description fade-in" style="animation-delay: 0.4s;">Expertise artisanale, qualité premium, passion du détail</p>
+            <button class="cta-button fade-in" style="animation-delay: 0.6s;" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Demander un devis</button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Services</h2>
+                <p>Une gamme complète de solutions pour vos projets de rénovation</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Plâtrerie</h3>
+                    <p>Travaux de plâtrerie traditionnelle et moderne pour tous vos projets d'intérieur</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>Pose de Placo</h3>
+                    <p>Installation professionnelle de plaques de plâtre pour cloisons et revêtements</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Faux Plafonds</h3>
+                    <p>Création de faux plafonds modernes pour une meilleure acoustique et isolation</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Isolation</h3>
+                    <p>Solutions d'isolation thermique et acoustique pour votre confort</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-roller"></i>
+                    </div>
+                    <h3>Peinture Intérieure</h3>
+                    <p>Finitions de qualité premium pour transformer vos espaces intérieurs</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h3>Peinture Extérieure</h3>
+                    <p>Peintures haute performance pour protéger et embellir vos façades</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Rénovation</h3>
+                    <p>Projets complets de rénovation intérieure et extérieure</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Conseil</h3>
+                    <p>Accompagnement personnalisé pour vos projets de décoration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before/After Gallery -->
+    <section class="galerie" id="galerie">
+        <div class="container">
+            <div class="section-header">
+                <h2>Galerie Avant/Après</h2>
+                <p>Découvrez la transformation de nos réalisations</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="before-after">
+                        <div class="img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1581092335218-fb0d2de6d1ba?w=600&h=400&fit=crop" alt="Avant rénovation">
+                            <div class="label before">Avant</div>
+                        </div>
+                        <div class="img-wrapper after-image">
+                            <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&h=400&fit=crop" alt="Après rénovation">
+                            <div class="label after">Après</div>
+                        </div>
+                        <div class="slider-handle">
+                            <i class="fas fa-chevron-left"></i>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <p class="project-name">Rénovation Salon - La Voulte-sur-Rhône</p>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="before-after">
+                        <div class="img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1585399649686-3d8f3fec2cf2?w=600&h=400&fit=crop" alt="Avant rénovation">
+                            <div class="label before">Avant</div>
+                        </div>
+                        <div class="img-wrapper after-image">
+                            <img src="https://images.unsplash.com/photo-1557432176-31c1d3f6b67d?w=600&h=400&fit=crop" alt="Après rénovation">
+                            <div class="label after">Après</div>
+                        </div>
+                        <div class="slider-handle">
+                            <i class="fas fa-chevron-left"></i>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <p class="project-name">Peinture Chambre - Projet Résidentiel</p>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="before-after">
+                        <div class="img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop" alt="Avant rénovation">
+                            <div class="label before">Avant</div>
+                        </div>
+                        <div class="img-wrapper after-image">
+                            <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&h=400&fit=crop" alt="Après rénovation">
+                            <div class="label after">Après</div>
+                        </div>
+                        <div class="slider-handle">
+                            <i class="fas fa-chevron-left"></i>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <p class="project-name">Faux Plafond & Isolation - Commercial</p>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="before-after">
+                        <div class="img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop" alt="Avant rénovation">
+                            <div class="label before">Avant</div>
+                        </div>
+                        <div class="img-wrapper after-image">
+                            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop" alt="Après rénovation">
+                            <div class="label after">Après</div>
+                        </div>
+                        <div class="slider-handle">
+                            <i class="fas fa-chevron-left"></i>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <p class="project-name">Rénovation Intérieure Complète</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="apropos" id="apropos">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>À Propos de LBP COULEURS</h2>
+                    <p>Depuis plus de 15 ans, LBP COULEURS est votre partenaire de confiance pour tous vos travaux de plâtrerie et peinture. Basée à La Voulte-sur-Rhône, notre entreprise artisanale s'engage à fournir des services de qualité premium.</p>
+                    <p>Notre équipe de professionnels expérimentés combine savoir-faire traditionnel et techniques modernes pour transformer vos espaces. Nous travaillons avec les meilleures matières premières et accordons une attention particulière à chaque détail.</p>
+                    <h3>Nos Valeurs</h3>
+                    <ul class="values-list">
+                        <li><i class="fas fa-check"></i> Qualité irréprochable</li>
+                        <li><i class="fas fa-check"></i> Respect des délais</li>
+                        <li><i class="fas fa-check"></i> Professionnalisme</li>
+                        <li><i class="fas fa-check"></i> Écoute client</li>
+                        <li><i class="fas fa-check"></i> Durabilité des finitions</li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">500+</div>
+                        <p>Projets réalisés</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">15+</div>
+                        <p>Années d'expérience</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">98%</div>
+                        <p>Clients satisfaits</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">24/7</div>
+                        <p>À votre service</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="avis" id="avis">
+        <div class="container">
+            <div class="section-header">
+                <h2>Avis Clients</h2>
+                <p>Découvrez les avis de nos clients satisfaits</p>
+            </div>
+            <div class="reviews-content">
+                <div class="reviews-left">
+                    <div class="google-rating-box">
+                        <div class="rating-header">
+                            <i class="fab fa-google"></i>
+                            <span>Google</span>
+                        </div>
+                        <div class="rating-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="rating-text">4.9/5 basé sur les avis clients</p>
+                        <a href="https://share.google/1CHtVfu2ucYwr1HSX" target="_blank" rel="noopener" class="review-button">Voir nos avis Google</a>
+                    </div>
+                </div>
+                <div class="reviews-right">
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"Excellent travail ! L'équipe est très professionnelle et respectueuse des délais. Je recommande vivement."</p>
+                        <p class="review-author">- Marie D.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"Résultat impeccable ! Les finitions sont parfaites. L'équipe a été à l'écoute de nos demandes."</p>
+                        <p class="review-author">- Jean P.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"Service de qualité premium. Les prix sont justes et le résultat dépasse les attentes."</p>
+                        <p class="review-author">- Sophie L.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nous Contacter</h2>
+                <p>Demandez votre devis gratuit ou posez vos questions</p>
+            </div>
+            <div class="contact-wrapper">
+                <form class="contact-form" id="contactForm" action="https://formspree.io/f/xdkgzvyz" method="POST">
+                    <div class="form-group">
+                        <label for="nom">Nom *</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telephone">Téléphone *</label>
+                        <input type="tel" id="telephone" name="telephone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Envoyer ma demande</button>
+                    <p class="form-notice">* Champs obligatoires</p>
+                </form>
+                <div class="contact-info">
+                    <h3>Coordonnées</h3>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <p class="label">Téléphone</p>
+                            <p><a href="tel:+33669121967">06 69 12 19 67</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <p class="label">Email</p>
+                            <p><a href="mailto:lbp.couleurs@hotmail.com">lbp.couleurs@hotmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p class="label">Localisation</p>
+                            <p>La Voulte-sur-Rhône<br>07800, France</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map"></i>
+                        <div>
+                            <p class="label">Zone d'intervention</p>
+                            <p>La Voulte-sur-Rhône, Ardèche<br>et régions limitrophes</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://facebook.com/lbpcouleurs" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/lbpcouleurs" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    
+                    <!-- Google Maps -->
+                    <div class="map-container" style="margin-top: 30px;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2823.8234567890123!2d4.6!3d45.35!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f5e5e5e5e5e5e5%3A0x0!2sLa%20Voulte-sur-Rh%C3%B4ne%2C%2007800!5e0!3m2!1sfr!2sfr!4v1234567890" width="100%" height="300" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>LBP COULEURS</h4>
+                    <p>Plâtrerie & Peinture Premium</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><a href="tel:+33669121967">06 69 12 19 67</a></p>
+                    <p><a href="mailto:lbp.couleurs@hotmail.com">lbp.couleurs@hotmail.com</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Zone d'intervention</h4>
+                    <p>La Voulte-sur-Rhône<br>Ardèche & régions limitrophes</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Réseaux Sociaux</h4>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/lbpcouleurs" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/lbpcouleurs" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LBP COULEURS. Tous droits réservés. | <a href="#">Politique de confidentialité</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
