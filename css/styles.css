@@ -786,7 +786,9 @@ body {
 }
 
 .contact-info {
-    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .contact-info h3 {
@@ -799,8 +801,14 @@ body {
 .info-item-clean {
     display: flex;
     gap: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     align-items: flex-start;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.info-item-clean:last-child {
+    border-bottom: none;
 }
 
 .info-item-clean i {
@@ -808,6 +816,7 @@ body {
     color: var(--color-beige);
     min-width: 30px;
     margin-top: 5px;
+    flex-shrink: 0;
 }
 
 .info-item-clean .label {
@@ -841,6 +850,8 @@ body {
     display: flex;
     gap: 20px;
     margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
 }
 
 .social-links a {
@@ -998,13 +1009,25 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
     .about-content {
         grid-template-columns: 1fr;
         gap: 40px;
     }
 
     .about-stats {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .guarantees-grid {
+        grid-template-columns: 1fr;
     }
 
     .reviews-content {
@@ -1012,8 +1035,7 @@ body {
     }
 
     .google-rating-box {
-        position: relative;
-        top: 0;
+        position: static;
     }
 
     .contact-wrapper {
@@ -1026,15 +1048,16 @@ body {
     }
 
     .contact-info {
-        padding: 0;
+        padding: 20px 0;
     }
 
-    .gallery-grid {
-        grid-template-columns: 1fr;
+    .info-item-clean {
+        margin-bottom: 30px;
     }
 
-    .guarantees-grid {
+    .footer-content {
         grid-template-columns: 1fr;
+        gap: 30px;
     }
 }
 
@@ -1052,44 +1075,28 @@ body {
         font-size: 14px;
     }
 
-    .section-header h2 {
-        font-size: 28px;
-    }
-
-    .about-stats {
-        grid-template-columns: 1fr;
-    }
-
-    .stat-number {
-        font-size: 36px;
-    }
-
-    .hero {
-        margin-top: 100px;
-    }
-
-    .reviews-right {
+    .contact-wrapper {
         gap: 20px;
     }
 
-    .review-card {
+    .contact-form {
         padding: 20px;
     }
 
-    .navbar {
-        top: 50px;
+    .contact-info h3 {
+        font-size: 22px;
     }
 
-    .emergency-banner {
-        font-size: 12px;
-        padding: 10px 0;
+    .info-item-clean {
+        margin-bottom: 25px;
     }
 
-    .nav-menu {
-        gap: 0;
+    .social-links {
+        gap: 15px;
     }
 
-    .logo {
-        font-size: 16px;
+    .social-links a {
+        width: 40px;
+        height: 40px;
     }
 }
