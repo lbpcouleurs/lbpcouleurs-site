@@ -1,14 +1,15 @@
 /* ========== RESET & VARIABLES ========== */
 :root {
-    --primary-color: #1a5f3f;
-    --primary-light: #2d8a5a;
-    --accent-color: #ff6b35;
+    --primary-color: #2c3e50;
+    --primary-light: #34495e;
+    --accent-color: #e74c3c;
     --text-dark: #1a1a1a;
     --text-light: #666;
-    --bg-light: #f9f9f9;
+    --bg-light: #ffffff;
+    --bg-subtle: #fafafa;
     --border-color: #e0e0e0;
-    --shadow: 0 4px 12px rgba(0,0,0,0.1);
-    --shadow-lg: 0 8px 24px rgba(0,0,0,0.15);
+    --shadow: 0 4px 12px rgba(0,0,0,0.08);
+    --shadow-lg: 0 8px 24px rgba(0,0,0,0.12);
     --transition: all 0.3s ease;
 }
 
@@ -26,7 +27,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
     line-height: 1.6;
     color: var(--text-dark);
-    background: #fff;
+    background: #ffffff;
     overflow-x: hidden;
 }
 
@@ -65,7 +66,7 @@ section {
 
 /* ========== EMERGENCY BANNER ========== */
 .emergency-banner {
-    background: #d32f2f;
+    background: #c0392b;
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -93,6 +94,7 @@ section {
     position: sticky;
     top: 44px;
     z-index: 999;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .navbar .container {
@@ -263,7 +265,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(44, 62, 80, 0.6);
     z-index: 1;
 }
 
@@ -287,7 +289,7 @@ section {
 .hero-subtitle {
     font-size: clamp(20px, 5vw, 28px);
     margin-bottom: 16px;
-    color: var(--accent-color);
+    color: #ecf0f1;
     font-weight: 600;
 }
 
@@ -310,7 +312,7 @@ section {
 
 /* ========== SERVICES ========== */
 .services {
-    background: var(--bg-light);
+    background: #ffffff;
 }
 
 .services-grid {
@@ -322,11 +324,11 @@ section {
 .service-card {
     background: white;
     padding: 30px 24px;
-    border-radius: 12px;
+    border-radius: 8px;
     text-align: center;
     box-shadow: var(--shadow);
     transition: var(--transition);
-    border-top: 4px solid var(--primary-color);
+    border-top: 3px solid var(--primary-color);
 }
 
 .service-card:hover {
@@ -353,7 +355,7 @@ section {
 
 /* ========== GALLERY ========== */
 .galerie {
-    background: white;
+    background: #ffffff;
 }
 
 .gallery-grid {
@@ -380,8 +382,9 @@ section {
     max-width: 100%;
     overflow: hidden;
     border-radius: 8px;
-    background: var(--bg-light);
+    background: #f5f5f5;
     aspect-ratio: 4/3;
+    border: 1px solid var(--border-color);
 }
 
 .before-after-container img {
@@ -416,7 +419,7 @@ section {
 }
 
 .comparison-slider::before {
-    content: '◀ ▶';
+    content: '\25c0 \25b6';
     position: absolute;
     left: -12px;
     top: 50%;
@@ -432,7 +435,7 @@ section {
 
 /* ========== ABOUT ========== */
 .apropos {
-    background: var(--bg-light);
+    background: #ffffff;
 }
 
 .about-content {
@@ -519,7 +522,7 @@ section {
 
 /* ========== GUARANTEES ========== */
 .guarantees {
-    background: white;
+    background: #ffffff;
 }
 
 .guarantees-grid {
@@ -529,17 +532,18 @@ section {
 }
 
 .guarantee-card {
-    background: var(--bg-light);
+    background: white;
     padding: 28px 20px;
     border-radius: 8px;
     text-align: center;
     transition: var(--transition);
-    border-bottom: 4px solid var(--accent-color);
+    border-bottom: 3px solid var(--accent-color);
+    box-shadow: var(--shadow);
 }
 
 .guarantee-card:hover {
     transform: translateY(-4px);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-lg);
 }
 
 .guarantee-icon {
@@ -561,7 +565,7 @@ section {
 
 /* ========== REVIEWS ========== */
 .avis {
-    background: var(--bg-light);
+    background: #ffffff;
 }
 
 .reviews-grid {
@@ -610,7 +614,7 @@ section {
 
 /* ========== CONTACT FORM ========== */
 .contact {
-    background: white;
+    background: #ffffff;
 }
 
 .contact-wrapper {
@@ -649,10 +653,11 @@ section {
 
 /* Form Styling */
 .contact-form {
-    background: var(--bg-light);
+    background: white;
     padding: 30px;
-    border-radius: 12px;
-    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
 }
 
 .form-group {
@@ -677,6 +682,7 @@ section {
     font-family: inherit;
     font-size: 14px;
     transition: var(--transition);
+    background: white;
 }
 
 .form-group input:focus,
@@ -684,7 +690,7 @@ section {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(26, 95, 63, 0.1);
+    box-shadow: 0 0 0 3px rgba(44, 62, 80, 0.1);
 }
 
 .form-group textarea {
@@ -825,8 +831,10 @@ section {
 
     .service-card,
     .review-card,
-    .guarantee-card {
+    .guarantee-card,
+    .navbar {
         background: #2a2a2a;
+        color: #e0e0e0;
     }
 }
 
