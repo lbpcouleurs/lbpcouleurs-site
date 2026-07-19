@@ -12,7 +12,6 @@
     
     <title>LBP COULEURS - Plâtrerie & Peinture | Drôme Ardèche</title>
 
-    <!-- CSS optimisé inline pour critiques + external async -->
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
@@ -21,8 +20,6 @@
         .emergency-banner a { color: white; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 8px; }
     </style>
     <link rel="stylesheet" href="css/main.css" media="all">
-
-    <!-- Font Awesome async -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 </head>
@@ -47,10 +44,10 @@
                     <li><a href="#accueil">Accueil</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#galerie">Réalisations</a></li>
-                    <li><a href="#apropos">À propos</a></li>
-                    <li><a href="#garanties">Garanties</a></li>
+                    <li><a href="about.html">À Propos</a></li>
+                    <li><a href="garanties.html">Garanties</a></li>
                     <li><a href="#avis">Avis</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -59,8 +56,8 @@
     <!-- Hero Section -->
     <section class="hero" id="accueil">
         <picture>
-            <source media="(max-width: 768px)" srcset="https://images.unsplash.com/photo-1581092335218-fb0d2de6d1ba?w=480&h=600&fit=crop" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="https://images.unsplash.com/photo-1581092335218-fb0d2de6d1ba?w=768&h=600&fit=crop" type="image/webp">
+            <source media="(max-width: 768px)" srcset="https://images.unsplash.com/photo-1581092335218-fb0d2de6d1ba?w=480&h=600&fit=crop">
+            <source media="(max-width: 1024px)" srcset="https://images.unsplash.com/photo-1581092335218-fb0d2de6d1ba?w=768&h=600&fit=crop">
             <img src="https://images.unsplash.com/photo-1581092335218-fb0d2de6d1ba?w=1200&h=600&fit=crop" alt="Intérieur moderne rénové" class="hero-bg" width="1200" height="600" loading="eager">
         </picture>
         <div class="hero-overlay"></div>
@@ -68,9 +65,7 @@
             <h1 class="hero-title">LBP COULEURS</h1>
             <p class="hero-subtitle">Plâtrerie & Peinture Premium</p>
             <p class="hero-description">Expertise artisanale • Qualité garantie • Transformation de vos espaces</p>
-            <button class="cta-button primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})" aria-label="Demander un devis gratuit">
-                📋 Devis Gratuit
-            </button>
+            <a href="contact.html" class="cta-button primary" aria-label="Demander un devis gratuit">📋 Devis Gratuit</a>
         </div>
     </section>
 
@@ -106,7 +101,7 @@
         </div>
     </section>
 
-    <!-- Galerie Before/After -->
+    <!-- Gallery Section -->
     <section class="galerie" id="galerie">
         <div class="container">
             <div class="section-header">
@@ -115,19 +110,19 @@
             </div>
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <div class="before-after-container" data-comparison="comparison1">
+                    <div class="before-after-container">
                         <img src="https://images.unsplash.com/photo-1581092335218-fb0d2de6d1ba?w=400&h=300&fit=crop" alt="Avant" class="before-img" width="400" height="300" loading="lazy">
                         <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=400&h=300&fit=crop" alt="Après" class="after-img" width="400" height="300" loading="lazy">
-                        <div class="comparison-slider" id="comparison1"></div>
+                        <div class="comparison-slider"></div>
                     </div>
                     <h3>Rénovation Salon Complet</h3>
                     <p>La Voulte-sur-Rhône</p>
                 </div>
                 <div class="gallery-item">
-                    <div class="before-after-container" data-comparison="comparison2">
+                    <div class="before-after-container">
                         <img src="https://images.unsplash.com/photo-1585399649686-3d8f3fec2cf2?w=400&h=300&fit=crop" alt="Avant" class="before-img" width="400" height="300" loading="lazy">
                         <img src="https://images.unsplash.com/photo-1557432176-31c1d3f6b67d?w=400&h=300&fit=crop" alt="Après" class="after-img" width="400" height="300" loading="lazy">
-                        <div class="comparison-slider" id="comparison2"></div>
+                        <div class="comparison-slider"></div>
                     </div>
                     <h3>Peinture & Plâtrerie Chambre</h3>
                     <p>Projet Résidentiel</p>
@@ -136,73 +131,7 @@
         </div>
     </section>
 
-    <!-- À Propos -->
-    <section class="apropos" id="apropos">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>À Propos de LBP COULEURS</h2>
-                    <p>Depuis 10+ ans, LBP COULEURS intervient en Drôme-Ardèche pour transformer vos espaces avec passion et expertise.</p>
-                    <h3>Nos Points Forts</h3>
-                    <ul class="values-list">
-                        <li>✓ Qualité irréprochable garantie</li>
-                        <li>✓ Respect des délais</li>
-                        <li>✓ Devis gratuit et précis</li>
-                        <li>✓ Garantie décennale</li>
-                        <li>✓ Équipe expérimentée</li>
-                    </ul>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-card">
-                        <div class="stat-number">10+</div>
-                        <p>Années d'expérience</p>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">500+</div>
-                        <p>Projets réalisés</p>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">100%</div>
-                        <p>Satisfaction clients</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Garanties -->
-    <section class="guarantees" id="garanties">
-        <div class="container">
-            <div class="section-header">
-                <h2>Nos Garanties</h2>
-                <p>Des engagements clairs pour votre sérénité</p>
-            </div>
-            <div class="guarantees-grid">
-                <div class="guarantee-card">
-                    <div class="guarantee-icon">🛡️</div>
-                    <h3>Garantie Qualité</h3>
-                    <p>Matériaux professionnels et finitions élevées garanties.</p>
-                </div>
-                <div class="guarantee-card">
-                    <div class="guarantee-icon">⏱️</div>
-                    <h3>Respect des Délais</h3>
-                    <p>Planning défini et communication régulière.</p>
-                </div>
-                <div class="guarantee-card">
-                    <div class="guarantee-icon">📋</div>
-                    <h3>Assurance RC Pro</h3>
-                    <p>Couverture complète responsabilité civile professionnelle.</p>
-                </div>
-                <div class="guarantee-card">
-                    <div class="guarantee-icon">🔟</div>
-                    <h3>Garantie Décennale</h3>
-                    <p>Protection maximale sur tous les travaux réalisés.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Avis Clients -->
+    <!-- Reviews Section -->
     <section class="avis" id="avis">
         <div class="container">
             <div class="section-header">
@@ -233,68 +162,6 @@
         </div>
     </section>
 
-    <!-- Contact & Formulaire -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Contactez-Nous</h2>
-                <p>Demandez votre devis gratuit en 2 minutes</p>
-            </div>
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <h3>Informations</h3>
-                    <div class="info-item">
-                        <strong>📞 Téléphone</strong>
-                        <a href="tel:+33669121967">06 69 12 19 67</a>
-                    </div>
-                    <div class="info-item">
-                        <strong>📍 Zone d'intervention</strong>
-                        <p>Drôme • Ardèche</p>
-                    </div>
-                    <div class="info-item">
-                        <strong>⏰ Horaires</strong>
-                        <p>Lun-Sam: 08h-18h</p>
-                    </div>
-                </div>
-                <form class="contact-form" id="contactForm" method="POST" action="#">
-                    <div class="form-group">
-                        <label for="nom">Nom complet*</label>
-                        <input type="text" id="nom" name="nom" required aria-required="true" placeholder="Jean Dupont">
-                    </div>
-                    <div class="form-group">
-                        <label for="tel">Téléphone*</label>
-                        <input type="tel" id="tel" name="tel" required aria-required="true" placeholder="06 XX XX XX XX" pattern="[0-9\s\-\+]+">
-                    </div>
-                    <div class="form-group">
-                        <label for="projet">Type de projet*</label>
-                        <select id="projet" name="projet" required aria-required="true">
-                            <option value="">-- Choisir --</option>
-                            <option value="renovation-complete">Rénovation complète</option>
-                            <option value="peinture">Peinture seule</option>
-                            <option value="platrerie">Plâtrerie/Cloisonnement</option>
-                            <option value="isolation">Isolation thermique</option>
-                            <option value="autre">Autre</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="zone">Zone géographique*</label>
-                        <select id="zone" name="zone" required aria-required="true">
-                            <option value="">-- Choisir --</option>
-                            <option value="drome">Drôme</option>
-                            <option value="ardeche">Ardèche</option>
-                            <option value="autre">Autre</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Description du projet</label>
-                        <textarea id="message" name="message" rows="4" placeholder="Décrivez brièvement votre projet..."></textarea>
-                    </div>
-                    <button type="submit" class="cta-button primary">📧 Demander mon devis</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -304,18 +171,18 @@
                     <p>Plâtrerie & Peinture Premium<br>Drôme • Ardèche</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Services</h4>
+                    <h4>Pages</h4>
                     <ul>
-                        <li><a href="#services">Plâtrerie</a></li>
-                        <li><a href="#services">Peinture</a></li>
-                        <li><a href="#services">Isolation</a></li>
-                        <li><a href="#services">Finitions</a></li>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="about.html">À Propos</a></li>
+                        <li><a href="garanties.html">Garanties</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
                     <a href="tel:+33669121967">06 69 12 19 67</a>
-                    <a href="#contact">Formulaire de contact</a>
+                    <a href="contact.html">Formulaire de contact</a>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -325,7 +192,6 @@
         </div>
     </footer>
 
-    <!-- Scripts optimisés -->
     <script src="js/main.js" defer></script>
 </body>
 </html>
