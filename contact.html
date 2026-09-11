@@ -81,7 +81,7 @@
                     <div style="background: #f9f9f9; padding: 30px; border-radius: 12px; text-align: center; border-top: 4px solid #ff6b35;">
                         <div style="font-size: 48px; margin-bottom: 16px;">💬</div>
                         <h3 style="font-size: 20px; color: #1a5f3f; margin-bottom: 12px;">WhatsApp</h3>
-                        <a href="https://wa.me/33669121967" target="_blank" rel="noopener" style="font-size: 16px; color: #ff6b35; text-decoration: none; font-weight: 600; display: inline-block; background: white; padding: 12px 24px; border-radius: 6px; border: 2px solid #ff6b35; transition: all 0.3s;">Envoyer un message</a>
+                        <a href="https://wa.me/33669121967" target="_blank" rel="noopener" style="font-size: 16px; color: #ff6b35; text-decoration: none; font-weight: 600; display: inline-block; background: white; padding: 10px 16px; border-radius: 6px; border: 1px solid #ff6b35;">Envoyer un message</a>
                         <p style="font-size: 14px; color: #555; margin-top: 16px;">Chat instantané</p>
                         <p style="font-size: 13px; color: #999;">Réponse en moins d'1 heure</p>
                     </div>
@@ -106,7 +106,10 @@
 
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
                     <!-- Form -->
-                    <form class="contact-form" id="contactForm" style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border: 1px solid #e0e0e0;">
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/xldrdzpk" method="POST" style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border: 1px solid #e0e0e0;">
+                        <div id="formStatus" style="display: none; padding: 15px; border-radius: 6px; margin-bottom: 20px; font-weight: 500;">
+                        </div>
+
                         <div class="form-group" style="margin-bottom: 20px;">
                             <label for="nom" style="display: block; font-weight: 600; color: #1a5f3f; margin-bottom: 8px; font-size: 14px;">Nom complet *</label>
                             <input type="text" id="nom" name="nom" required style="width: 100%; padding: 12px 14px; border: 1px solid #e0e0e0; border-radius: 6px; font-family: inherit; font-size: 14px; transition: all 0.3s; background: white;" placeholder="Jean Dupont">
@@ -124,7 +127,7 @@
 
                         <div class="form-group" style="margin-bottom: 20px;">
                             <label for="projet" style="display: block; font-weight: 600; color: #1a5f3f; margin-bottom: 8px; font-size: 14px;">Type de projet *</label>
-                            <select id="projet" name="projet" required style="width: 100%; padding: 12px 14px; border: 1px solid #e0e0e0; border-radius: 6px; font-family: inherit; font-size: 14px; background: white;">
+                            <select id="projet" name="projet" required style="width: 100%; padding: 12px 14px; border: 1px solid #e0e0e0; border-radius: 6px; font-family: inherit; font-size: 14px; transition: all 0.3s; background: white;">
                                 <option value="">-- Sélectionner --</option>
                                 <option value="renovation-complete">Rénovation complète</option>
                                 <option value="peinture">Peinture intérieure</option>
@@ -138,7 +141,7 @@
 
                         <div class="form-group" style="margin-bottom: 20px;">
                             <label for="zone" style="display: block; font-weight: 600; color: #1a5f3f; margin-bottom: 8px; font-size: 14px;">Zone géographique *</label>
-                            <select id="zone" name="zone" required style="width: 100%; padding: 12px 14px; border: 1px solid #e0e0e0; border-radius: 6px; font-family: inherit; font-size: 14px; background: white;">
+                            <select id="zone" name="zone" required style="width: 100%; padding: 12px 14px; border: 1px solid #e0e0e0; border-radius: 6px; font-family: inherit; font-size: 14px; transition: all 0.3s; background: white;">
                                 <option value="">-- Sélectionner --</option>
                                 <option value="drome">Drôme</option>
                                 <option value="ardeche">Ardèche</option>
@@ -148,7 +151,7 @@
 
                         <div class="form-group" style="margin-bottom: 20px;">
                             <label for="budget" style="display: block; font-weight: 600; color: #1a5f3f; margin-bottom: 8px; font-size: 14px;">Budget approximatif</label>
-                            <select id="budget" name="budget" style="width: 100%; padding: 12px 14px; border: 1px solid #e0e0e0; border-radius: 6px; font-family: inherit; font-size: 14px; background: white;">
+                            <select id="budget" name="budget" style="width: 100%; padding: 12px 14px; border: 1px solid #e0e0e0; border-radius: 6px; font-family: inherit; font-size: 14px; transition: all 0.3s; background: white;">
                                 <option value="">-- Sans importance --</option>
                                 <option value="0-2000">0 - 2 000€</option>
                                 <option value="2000-5000">2 000 - 5 000€</option>
@@ -159,10 +162,10 @@
 
                         <div class="form-group" style="margin-bottom: 30px;">
                             <label for="message" style="display: block; font-weight: 600; color: #1a5f3f; margin-bottom: 8px; font-size: 14px;">Description du projet</label>
-                            <textarea id="message" name="message" style="width: 100%; padding: 12px 14px; border: 1px solid #e0e0e0; border-radius: 6px; font-family: inherit; font-size: 14px; resize: vertical; min-height: 120px; background: white;" placeholder="Décrivez votre projet (dimensions, couleurs souhaitées, délais...)"></textarea>
+                            <textarea id="message" name="message" style="width: 100%; padding: 12px 14px; border: 1px solid #e0e0e0; border-radius: 6px; font-family: inherit; font-size: 14px; resize: vertical; min-height: 100px; transition: all 0.3s; background: white;" placeholder="Décrivez votre projet en détail..."></textarea>
                         </div>
 
-                        <button type="submit" style="width: 100%; background: linear-gradient(135deg, #1a5f3f 0%, #2d8a5a 100%); color: white; padding: 14px 28px; border: none; border-radius: 6px; font-size: 16px; font-weight: 600; cursor: pointer; transition: transform 0.3s; outline: none;">📧 Envoyer ma demande</button>
+                        <button type="submit" style="width: 100%; background: linear-gradient(135deg, #1a5f3f 0%, #2d8a5a 100%); color: white; padding: 14px 28px; border: none; border-radius: 6px; font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 0.5px;">✉️ Envoyer Ma Demande</button>
                         <p style="font-size: 12px; color: #999; margin-top: 12px; text-align: center;">* Champs obligatoires</p>
                     </form>
 
